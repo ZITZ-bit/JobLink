@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+.welcome {
+    margin-left: 30%;
+    animation: welcome 3s forwards;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    color: #1f2937;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.welcome-text p {
+    color: #6b7280;
+    margin: 10px;
+    margin: 0 20%;
+    font-size: 1rem;
+}
+
+.circle {
+    margin-top: -25%;
+    margin-left: 10%;
+    width: 400px;
+    height: 400px;
+    background-color: #4B5563;
+    border-radius: 50%;
+    animation: circle 3s forwards;
+    position: relative;
+    z-index: 1;
+}
+
+.img_welcome {
+    display: flex;
+    margin-top: -18%;
+    margin-left: 10%;
+    animation: image 3s forwards;
+    position: relative;
+    z-index: 2;
+}
+
+.rols-btn {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    gap: 10px;
+}
+
+.btn1 {
+    background-color: #e79e16;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: solid 1px #e79e16;
+    transform: scale(1.05);
+    color: #1f2937;
+}
+
+.btn2 {
+    background-color: #1658e7;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: solid 1px #1658e7;
+    transform: scale(1.05);
+    color: #1f2937;
+}
+
+/* Animaciones */
+
+.animate__fadeInDown {
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.animate__fadeInUp {
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+@keyframes welcome {
+    0% {
+        transform:  translateX(-20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes image {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
