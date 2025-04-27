@@ -12,13 +12,12 @@ import Footer from "@/components/Footer"
 
 /* Estilos y Modulos */
 
-import "@/styles/Login.css"
+import "@/styles/Login.css";
 
 /* Logica De Componentes */
 
 
 /* Animaciones */
-
 
 export default function Login() {
 
@@ -34,7 +33,27 @@ export default function Login() {
 
       <main>
 
+        <section className="login-container">
+          <form className="login-form" autoComplete="off">
+              <p className="title">Login</p>
+              <p className="message">Registrate ahora para que puedas tener tu propio Perfil</p>
 
+            <label>
+              <input type="text" required/>
+              <span>Email</span>
+            </label>
+            
+            <label>
+              <input type="password" id="password" required/>
+              <span>Contraseña</span>
+            </label>
+
+            <button className="submit" onClick={() => router.push("#")}> Login </button>
+            
+            <p className="signin">No tienes cuenta?? <Link href="/ui/Register">Registrate</Link> ahora!!</p>
+
+          </form>
+        </section>
 
       </main>
 

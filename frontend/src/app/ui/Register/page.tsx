@@ -34,7 +34,47 @@ export default function Register() {
 
       <main>
 
+        <section className="container">
+          <form autoComplete="off" className="form">
 
+              <p className="title">Registro</p>
+              <p className="message">Registrate ahora para que puedas tener tu propio Perfil</p>
+
+            <section className="form-group">
+
+              <label>
+                <input type="text" required/>
+                <span>Nombre</span>
+              </label>
+
+              <label>
+                <input type="text" required/>
+                <span>Apellido</span>
+              </label>
+
+            </section>
+
+            <label>
+              <input type="text" required/>
+              <span>Email</span>
+            </label>
+            
+            <label>
+              <input type="password" id="password" required/>
+              <span>Contraseña</span>
+            </label>
+
+            <label>
+              <input type="password" id="passwordConfirm" required/>
+              <span>Confirmar Contraseña</span>
+            </label>
+
+            <button className="submit" onClick={() => router.push("/ui/Login")}> Registrarte </button>
+            
+            <p className="signin">Ya tienes cuenta?? <Link href="/ui/Login">Inicia Sesion</Link> ahora</p>
+
+          </form>
+        </section>
 
       </main>
 

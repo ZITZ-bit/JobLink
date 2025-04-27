@@ -34,7 +34,7 @@ function Navar({ className = ""}) {
 
         <nav>
           <ul className="flex list-none gap-6 text-[1.05rem] font-semibold">
-            <li className="transition duration-300 transform hover:-translate-y-1"><Link href="#">Inicio</Link></li>
+            <li className="transition duration-300 transform hover:-translate-y-1"><Link href="/">Inicio</Link></li>
             <li className="transition duration-300 transform hover:-translate-y-1"><Link href="#">Oferta</Link></li>
             <li className="transition duration-300 transform hover:-translate-y-1"><Link href="#">Nosotros</Link></li>
             <li className="transition duration-300 transform hover:-translate-y-1"><Link href="#">Contactos</Link></li>
@@ -42,7 +42,9 @@ function Navar({ className = ""}) {
         </nav>
 
         <section>
+
           <UserButtons />
+          
         </section>
 
       </header>

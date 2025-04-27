@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    margin-left: 6%;
+    margin-bottom: -1%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background: #3a454e;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: #1ab188;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
+}
+
+.message,
+.signin {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signin a {
+    color: #1ab188;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.signin a:hover {
+    color: #1ac79a;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.form label input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #808892;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label input:placeholder-shown + span {
+    top: 5px;
+    font-size: 0.9em;
+}
+
+.form label input:focus + span,
+.form label input:valid + span {
+    top: 32px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label input:focus + span,
+.form label input:valid + span {
+    color: #1ab188;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    margin: 10px;
+    background: #1ab188;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    transform: 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background: #1ac79a;
+    transform: scale(1.05);
+}

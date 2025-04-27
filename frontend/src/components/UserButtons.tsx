@@ -19,11 +19,11 @@ function Navar() {
   return (
     <section>
       
-      <button onClick={() => router.push("/Login")} className="m-2 bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-600 border border-white hover:text-white transition duration-300 shadow-md transition duration-300 transform hover:scale-110">
+      <button onClick={() => router.push("/ui/Register")} className="m-2 bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-600 border border-white hover:text-white transition duration-300 shadow-md transition duration-300 transform hover:scale-110">
         Register
       </button>
 
-      <button onClick={() => router.push("/Inicio")} className="m-2 bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-600 border border-white hover:text-white transition duration-300 shadow-md transition duration-300 transform hover:scale-110">
+      <button onClick={() => router.push("/ui/Login")} className="m-2 bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-600 border border-white hover:text-white transition duration-300 shadow-md transition duration-300 transform hover:scale-110">
         Login 
       </button>
 
