@@ -22,6 +22,7 @@
     padding: 20px;
     border-radius: 10px;
     position: relative;
+    animation: register 2s forwards;
 }
 
 .title {
@@ -112,4 +113,51 @@
 .submit:hover {
     background: #1ac79a;
     transform: scale(1.05);
+}
+
+.circle_register {
+    margin-top: -30%;
+    margin-left: 10%;
+    width: 400px;
+    height: 400px;
+    background-color: #4B5563;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: CircleRegister 3s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_register {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    z-index: 2;
+}
+
+/* Animaciones */
+
+@keyframes register {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(90%);
+        opacity: 1;
+    }
+}
+
+@keyframes CircleRegister {
+    0% {
+        transform: translateX(80%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }

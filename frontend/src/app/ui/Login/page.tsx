@@ -2,8 +2,8 @@
 
 /* Componentes De Next */
 
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 /* Componentes Reutilizables */
 
@@ -16,51 +16,53 @@ import "@/styles/Login.css";
 
 /* Logica De Componentes */
 
-
 /* Animaciones */
 
 export default function Login() {
-
-  const router = useRouter();
 
   return (
     <>
       <header>
 
-        <Navar className="animate__animated animate__fadeInDown"/>
-
+        <Navar className="animate__animated animate__fadeInDown" />
+        
       </header>
 
       <main>
 
         <section className="login-container">
           <form className="login-form" autoComplete="off">
-              <p className="title">Login</p>
-              <p className="message">Registrate ahora para que puedas tener tu propio Perfil</p>
+
+            <p className="title">Login</p>
+            <p className="message">Registrate ahora para que puedas tener tu propio Perfil</p>
 
             <label>
-              <input type="text" required/>
+              <input type="email" required />
               <span>Email</span>
             </label>
-            
+
             <label>
-              <input type="password" id="password" required/>
+              <input type="password" required />
               <span>Contraseña</span>
             </label>
 
-            <button className="submit" onClick={() => router.push("#")}> Login </button>
-            
+            <button type="submit" className="submit">Login</button>
+
             <p className="signin">No tienes cuenta?? <Link href="/ui/Register">Registrate</Link> ahora!!</p>
 
           </form>
+        </section>
+
+        <section className="circle_login">
+          <Image src="/image3.svg" alt="Register" width={400} height={400} className="img_login" />
         </section>
 
       </main>
 
       <footer>
 
-        <Footer className="animate__animated animate__fadeInUp"/>
-        
+        <Footer className="animate__animated animate__fadeInUp" />
+
       </footer>
     </>
   );

@@ -2,7 +2,6 @@
 
 /* Componentes De Next */
 
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -22,8 +21,6 @@ import "@/styles/Home.css"
 
 
 export default function Home() {
-
-  const router = useRouter();
 
   return (
     <>
@@ -48,8 +45,8 @@ export default function Home() {
 
           <section className="rols-btn">
 
-            <button className="btn1" onClick={() => router.push("/reclutador")}> Soy Reclutador </button>
-            <button className="btn2" onClick={() => router.push("/aspirante")}> Soy Aspirante </button>
+            <Link href="/ui/Formulario/Reclutador"><button className="btn1">Soy Reclutador</button></Link>
+            <Link href="/ui/Formulario/Aspirante"><button className="btn2">Soy Aspirante</button></Link>
         
           </section>
         </section>

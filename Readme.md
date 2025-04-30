@@ -81,5 +81,10 @@ npm install animejs --save
 
 📦 Dependencias del BackEnd
 
-npm install -D prisma
+npm install bcrypt @nestjs/jwt @nestjs/passport passport passport-jwt jsonwebtoken
+npm install @types/bcrypt @types/passport-jwt --save-dev
+npm install class-validator class-transformer
+npm install @types/bcryptjs --save-dev
 npm install @prisma/client
+npm install -D prisma
+npm install bcryptjs
