@@ -2,33 +2,28 @@
 
 /* Componentes De Next */
 
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 /* Componentes Reutilizables */
 
 import Navar from "@/components/Navar";
-import Footer from "@/components/Footer"
+import Footer from "@/components/Footer";
 
 /* Estilos y Modulos */
 
-import "@/styles/Register.css"
+import "@/styles/Register.css";
 
 /* Logica De Componentes */
 
-
 /* Animaciones */
 
-
 export default function Register() {
-
-  const router = useRouter();
-
   return (
     <>
       <header>
 
-        <Navar className="animate__animated animate__fadeInDown"/>
+        <Navar className="animate__animated animate__fadeInDown" />
 
       </header>
 
@@ -37,8 +32,8 @@ export default function Register() {
         <section className="container">
           <form autoComplete="off" className="form">
 
-              <p className="title">Registro</p>
-              <p className="message">Registrate ahora para que puedas tener tu propio Perfil</p>
+            <p className="title">Registro</p>
+            <p className="message">Registrate ahora para que puedas tener tu propio Perfil</p>
 
             <section className="form-group">
 
@@ -55,33 +50,38 @@ export default function Register() {
             </section>
 
             <label>
-              <input type="text" required/>
+              <input type="email" required />
               <span>Email</span>
             </label>
-            
+
             <label>
-              <input type="password" id="password" required/>
+              <input type="password" required />
               <span>Contraseña</span>
             </label>
 
             <label>
-              <input type="password" id="passwordConfirm" required/>
+              <input type="password" required />
               <span>Confirmar Contraseña</span>
             </label>
 
-            <button className="submit" onClick={() => router.push("/ui/Login")}> Registrarte </button>
-            
-            <p className="signin">Ya tienes cuenta?? <Link href="/ui/Login">Inicia Sesion</Link> ahora</p>
+            <button type="submit" className="submit">Registrarte</button>
+
+            <p className="signin">Ya tienes cuenta?? <Link href="/ui/Login">Inicia Sesión</Link> ahora</p>
 
           </form>
         </section>
 
+        <section className="circle_register">
+          <Image src="/image2.svg" alt="Register" width={400} height={400} className="img_register" />
+        </section>
+
+        
       </main>
 
       <footer>
 
-        <Footer className="animate__animated animate__fadeInUp"/>
-        
+        <Footer className="animate__animated animate__fadeInUp" />
+
       </footer>
     </>
   );

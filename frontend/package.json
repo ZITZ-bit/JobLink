@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "create.component": "python scripts/Component.py",
+    "create.page": "python scripts/Pagina.py",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
