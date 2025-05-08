@@ -8,6 +8,7 @@ import Image from "next/image";
 /* Componentes Reutilizables */
 
 import Navar from "@/components/Navar";
+import Message from "@/components/Message";
 import Footer from "@/components/Footer"
 
 /* Estilos y Modulos */
@@ -57,6 +58,8 @@ export default function Home() {
             <section className="circle"></section>
           </section>
 
+          <Message />
+          
       </main>
 
       <footer>
