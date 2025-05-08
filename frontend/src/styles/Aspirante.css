@@ -3,3 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.Applicant-Form {
+    margin-top: 2%;
+    margin-left: 28%; 
+}
+
+.Applicant-NextBtn {
+    margin-left: 80%;
+}

@@ -1,0 +1,19 @@
+.SimpleButton {
+    font-weight: 500;
+    margin: 5px;
+    gap: 10px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.SimpleButton:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+    border: solid 1px var(--border-color);
+    color: var(--text-hover);
+    transform: scale(1.05);
+}

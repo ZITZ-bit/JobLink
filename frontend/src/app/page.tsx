@@ -13,6 +13,7 @@ import Footer from "@/components/Footer"
 /* Estilos y Modulos */
 
 import "@/styles/Home.css"
+import "@/styles/Scss/Resolucion.scss"
 
 /* Logica De Componentes */
 
@@ -46,13 +47,15 @@ export default function Home() {
           <section className="rols-btn">
 
             <Link href="/ui/Formulario/Reclutador"><button className="btn1">Soy Reclutador</button></Link>
-            <Link href="/ui/Formulario/Aspirante"><button className="btn2">Soy Aspirante</button></Link>
+            <Link href="/ui/Formulario/Aspirante/Formulario1/"><button className="btn2">Soy Aspirante</button></Link>
         
           </section>
         </section>
         
-          <Image src="/image1.svg" alt="welcome" width={400} height={400} className="img_welcome" />
-          <section className="circle"></section>
+          <section className="img-container">
+            <Image src="/image1.svg" alt="welcome" width={400} height={400} className="img_welcome" />
+            <section className="circle"></section>
+          </section>
 
       </main>
 

@@ -78,6 +78,7 @@ npm run start:dev
 npm install animate.css --save
 npm install boxicons --save
 npm install animejs --save
+npm install sass
 
 📦 Dependencias del BackEnd
 

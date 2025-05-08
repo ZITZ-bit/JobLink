@@ -3,3 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.Recruiter-Form {
+    margin-top: 2%;
+    margin-left: 28%; 
+}
+
+.Recruiter-NextBtn {
+    margin-left: 80%;
+}

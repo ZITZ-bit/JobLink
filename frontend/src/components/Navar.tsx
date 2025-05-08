@@ -25,7 +25,7 @@ function Navar({ className = ""}) {
     <section>
       <header className={`${className} flex rounded-md justify-between items-center py-2 px-4 m-2 bg-gray-600 text-white font-light text-sm shadow-md`}>
 
-        <section className="flex items-center gap-2 transition duration-300 transform hover:scale-110 cursor-pointer">
+        <section className="logo flex items-center gap-2 transition duration-300 transform hover:scale-110 cursor-pointer">
           
           <Image src="/IconLight.png" alt="Logo" width={70} height={70} />
           <span className="text-xl font-bold">JobLink</span>
@@ -41,7 +41,7 @@ function Navar({ className = ""}) {
           </ul>
         </nav>
 
-        <section>
+        <section className="buttons_usr">
 
           <UserButtons />
           
